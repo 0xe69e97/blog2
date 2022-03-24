@@ -16,13 +16,14 @@ export default defineConfig(async () => {
         "react/jsx-runtime": "react/jsx-runtime.js",
       },
     },
-    // build: {
-    //   rollupOptions: {
-    //     input: {
-    //       main: resolve(__dirname, 'index.html'),
-    //       // hello: resolve(__dirname, 'posts/hello/index.mdx')
-    //     }
-    //   }
-    // }
+    build: {
+      outDir: 'dist',
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, 'index.html'),
+          // hello: resolve(__dirname, 'posts/hello/index.mdx')
+        }
+      }
+    }
   }
 })
