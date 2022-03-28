@@ -1,0 +1,1 @@
+import{b as n}from"./vendor.b6b85628.js";function l(e){return console.log(e,"props"),n.exports.jsxs("div",{children:[n.exports.jsxs("span",{children:["Hello ",e==null?void 0:e.name]}),"This is text some content from `_markdown-partial-example.mdx`."]})}export{l as default};
