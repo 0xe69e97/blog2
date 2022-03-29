@@ -1,21 +1,17 @@
-import Demo, { metadata } from './index.mdx'
-import { Box, Text, Message, Card, Button } from 'theme-ui'
+import PostsHeader from '@src/components/PostsHeader'
+import Content from './content.mdx'
 
-function RenderHello(props) {
-  console.log(props, 'props')
+export default function Render(props) {
+  const { title, author } = props
+  const date = new Date(props.date).toLocaleDateString("zh-CN", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  })
   return (
-    <div>
-      <Message>
-        这是一些提示信息：
-      </Message>
-      <Card>
-        <Text>
-          大家好，我是丁林
-        </Text>
-        <Text>如果哈哈哈</Text>
-      </Card>
-    </div>
-  );
+    <>
+      <PostsHeader title={title} date={date} author={author} />
+      <Content />
+    </>
+  )
 }
-
-export default RenderHello

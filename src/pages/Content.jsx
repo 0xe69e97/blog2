@@ -23,7 +23,7 @@ function Content() {
 }
 
 function Item({ title, date, url, type, description, pinned, path }) {
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const formattedDate = new Date(date).toLocaleDateString("zh-CN", {
     year: "numeric",
     month: "long",
     day: "numeric",

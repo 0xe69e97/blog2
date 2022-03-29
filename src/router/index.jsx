@@ -15,7 +15,7 @@ export default function Routers() {
           <Route
             key={item.path}
             path={item.path}
-            element={<HOC name={item.name} component={item.component} />}
+            element={<HOC {...item} />}
           ></Route>
         );
       })}

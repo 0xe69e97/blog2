@@ -12,11 +12,6 @@ function RenderHeader({ title, date, author = "丁林", describe = "" }) {
             <Heading>{title}</Heading>
             <Text>{describe}</Text>
           </Card>
-          <Badge>Badge</Badge>
-          <Badge variant="accent">New</Badge>
-          <Badge variant="outline" ml={1}>
-            Cool
-          </Badge>
         </Box>
       }
       aside={
@@ -26,9 +21,7 @@ function RenderHeader({ title, date, author = "丁林", describe = "" }) {
         </Box>
       }
     />
-  );
-  // (
-  // );
+  )
 }
 
 export default RenderHeader;
