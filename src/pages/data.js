@@ -21,7 +21,18 @@ const COMPONENTS = [
     name: "test",
     path: "/test",
     component: lazy(() => import("@posts/hello1/index.mdx")),
-  }
+  },
+  {
+    type: "Project",
+    title: "关于这篇博客",
+    description: "通过 React + Vite + MDX + Code Hike 进行开发的博客网站，有关技术细节可以详细看看～",
+    date: "2021-03-29",
+    url: "",
+    name: "about",
+    path: "/about",
+    component: lazy(() => import("@posts/about/index")),
+    pinned: true,
+  },
 ]
 
 export default COMPONENTS

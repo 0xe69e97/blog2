@@ -1,21 +1,19 @@
 /** @jsxImportSource theme-ui */
 import { Link } from 'react-router-dom'
 import data from "./data"
-import Header from "@src/components/Header";
 import ContentWithAside from "./ContentWithAside"
 
 function Content() {
+  // 将静态数据分割为两个部分，按照日期进行排序
+  // 第一部分进行不是固定顺序排序
+  const sortA = data.filter(item => !item.pinned).sort((a, b) => +new Date(b.date) - +new Date(a.date))
+  // 第二部分进行是固定顺序的排序
+  const sortB = data.filter(item => item.pinned).sort((a, b) => +new Date(b.date) - +new Date(a.date))
+  // 链接数组，进行渲染
+  const list = [...sortB, ...sortA]
   return (
     <>
-      <Item
-        title="undefined"
-        date="2020/06/15"
-        url="https://codehike.org"
-        type="Project"
-        description="Marvellous code walkthroughs"
-        pinned
-      />
-      {data.map((item, i) => (
+      {list.map((item, i) => (
         <Item key={i} {...item} />
       ))}
     </>
@@ -39,10 +37,8 @@ function Item({ title, date, url, type, description, pinned, path }) {
     >
       <ContentWithAside
         main={
-          // <Link to="/">Home</Link>
           <Link
             to={path ?? '/'}
-            // href={url}
             sx={{
               textDecoration: "none",
               color: "inherit",
