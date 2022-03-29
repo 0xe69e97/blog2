@@ -14,6 +14,58 @@ export const theme = {
     "yellowDark": "#FFDA3A",
     "yellow": "#FCF5C7"
   },
+  styles: {
+    "root": {
+      "fontFamily": "body",
+      "lineHeight": "body",
+      "color": 'primaryDark'
+    },
+    "a": {
+      "color": "primary",
+      "&:hover": {
+        "color": "primaryDark"
+      }
+    },
+    "pre": {
+      "fontFamily": "monospace",
+      "fontSize": 1,
+      "p": 3,
+      "color": "text",
+      "bg": "muted",
+      "overflow": "auto"
+    },
+    "code": {
+      "fontFamily": "monospace",
+      "fontSize": 1,
+      "color": 'primary'
+    },
+    "inlineCode": {
+      "fontFamily": "monospace",
+      "color": "blueDark"
+    },
+    "table": {
+      "borderCollapse": "separate",
+      "borderSpacing": 0
+    },
+    "th": {
+      "border": "thick",
+      "borderRadius": "sketchy3",
+      "borderBottomWidth": "1px",
+      "p": 2
+    },
+    "td": {
+      "border": "thick",
+      "borderRadius": "sketchy1",
+      "p": 2
+    },
+    "hr": {
+      "border": 0,
+      "borderBottom": "thin"
+    },
+    "img": {
+      "maxWidth": "100%"
+    }
+  },
   "fonts": {
     "body": "\"Architects Daughter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif",
     "heading": "inherit",
@@ -53,56 +105,6 @@ export const theme = {
     "outline": "0 0 0px 1px black rgba(0,0,0,.4)",
     "default": "15px 24px 25px -18px rgba(0,0,0,.4)",
     "hover": "2px 8px 10px -6px rgba(0,0,0,.4)"
-  },
-  "styles": {
-    "root": {
-      "fontFamily": "body",
-      "lineHeight": "body"
-    },
-    "a": {
-      "color": "primary",
-      "&:hover": {
-        "color": "primaryDark"
-      }
-    },
-    "pre": {
-      "fontFamily": "monospace",
-      "fontSize": 1,
-      "p": 3,
-      "color": "text",
-      "bg": "muted",
-      "overflow": "auto"
-    },
-    "code": {
-      "fontFamily": "monospace",
-      "fontSize": 1
-    },
-    "inlineCode": {
-      "fontFamily": "monospace",
-      "color": "blueDark"
-    },
-    "table": {
-      "borderCollapse": "separate",
-      "borderSpacing": 0
-    },
-    "th": {
-      "border": "thick",
-      "borderRadius": "sketchy3",
-      "borderBottomWidth": "1px",
-      "p": 2
-    },
-    "td": {
-      "border": "thick",
-      "borderRadius": "sketchy1",
-      "p": 2
-    },
-    "hr": {
-      "border": 0,
-      "borderBottom": "thin"
-    },
-    "img": {
-      "maxWidth": "100%"
-    }
   },
   "buttons": {
     "primary": {
@@ -175,6 +177,9 @@ export const theme = {
     }
   },
   "forms": {
+    label: {
+      alignItems: 'center'
+    },
     "input": {
       "borderRadius": "sketchy3",
       "borderColor": "text",

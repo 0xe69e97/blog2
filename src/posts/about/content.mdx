@@ -1,1 +1,72 @@
-12
+import { Heading, Label, Flex, Box, Checkbox } from 'theme-ui'
+
+大家好，我是丁林，目前在 58 集团任职。之前博客一直采用的 `Vuepress` 写的，使用 `GitHub` 的 `pages` 做的，部署到了 `GitHub` 上面
+
+突然想自己弄一个 `React` 版本的博客，顺便以后在深入学习 `React` 时可以进行实验等，例如新 `API` 一些以及一些想法都会在这里去实现
+
+目前也在持续更新，之前的[老站点(smalin.cn)](https://smalin.cn)也会留存并更新，后续也可能接入后端，例如学习 `SSR`、`GraphQL`、`Docker` 等等技术，以及后续可能接入评论等功能，都会使用本站进行实验以及学习
+
+源码在 [github](https://github.com/0xe69e97/blog2) 上
+
+---
+
+### 以下为当前博客的进度包括需要的技术栈以及一些未来规划
+
+使用 `React` 作为前端开发框架
+
+使用 `Vite` 作为本地开发以及上线构建工具
+
+使用 `MDX` 作为 `MD` 格式文件书写
+
+使用 `Code Hike` 作为代码文章同步方案
+
+使用 `Node` 处理文章的自动化部署流程（CI）
+
+使用 `ESLint` 约束代码规范
+
+使用 `Prittier` 约束代码风格
+
+通过 Node 工具进行 `MDX2MD`
+
+使用 `SSR` 技术对网站的 `SEO` 进行优化
+
+## feature
+
+<Label>
+  <Checkbox defaultChecked={true} />
+  React
+</Label>
+<Label>
+  <Checkbox defaultChecked={true} />
+  Vite
+</Label>
+<Label>
+  <Checkbox defaultChecked={true} />
+  MDX
+</Label>
+<Label>
+  <Checkbox />
+  Code Hike
+</Label>
+<Label>
+  <Checkbox />
+  Node 自动部署
+</Label>
+<Label>
+  <Checkbox />
+  ESLint
+</Label>
+<Label>
+  <Checkbox />
+  Prittier
+</Label>
+
+<Label>
+  <Checkbox />
+  MDX2MD
+</Label>
+
+<Label>
+  <Checkbox />
+  SSR
+</Label>

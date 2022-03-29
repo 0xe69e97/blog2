@@ -8,8 +8,8 @@ const COMPONENTS = [
     description: "通过 NodeJs 来实现一个属于自己的自动化部署前端工程的一个小工具，了解一下 CI 的整个流程...",
     date: "2019-05-27",
     url: "",
-    name: "hello",
-    path: "/hello",
+    name: "node-apply-auto-deploy",
+    path: "/node-apply-auto-deploy",
     component: lazy(() => import("@posts/hello/index")),
   },
   {

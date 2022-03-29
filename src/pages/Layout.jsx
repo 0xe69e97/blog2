@@ -24,6 +24,16 @@ function Layout({ children, responsive }) {
                 overflow-x: ${false ? "hidden" : "visible"};
               }
             }
+            code {
+              background-color: #9b59b6;
+              color: white;
+              padding: 2px 5px;
+              border-radius: 5px;
+            }
+            a {
+              color: #9b59b6;
+              font-weight: 500;
+            }
           `}
         />
         <aside
