@@ -9,7 +9,7 @@ const COMPONENTS = [
     url: "",
     name: "hello",
     path: "/hello",
-    component: lazy(() => import("../posts/hello")),
+    component: lazy(() => import("@posts/hello/index.mdx")),
   },
   {
     type: "Project",
@@ -19,7 +19,7 @@ const COMPONENTS = [
     url: "",
     name: "test",
     path: "/test",
-    component: lazy(() => import("../posts/test")),
+    component: lazy(() => import("@posts/hello1/index.mdx")),
   }
 ]
 

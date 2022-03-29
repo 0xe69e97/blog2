@@ -12,12 +12,19 @@ export default defineConfig(async () => {
       mdx.default({ remarkPlugins: [[remarkCodeHike, { theme }]] }),
     ],
     resolve: {
-      alias: {
-        "react/jsx-runtime": "react/jsx-runtime.js",
-      },
+      alias: [
+        { find: /^@src/, replacement: resolve(__dirname, './src') },
+        { find: /^@posts/, replacement: resolve(__dirname, './src/posts') },
+        
+        { find: 'react/jsx-runtime', replacement: 'react/jsx-runtime.js' },
+      ]
+      // {
+      //   "react/jsx-runtime": "react/jsx-runtime.js",
+      //   "@src": resolve(__dirname, './src')
+      // },
     },
+
     build: {
-      outDir: 'docs',
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'index.html'),

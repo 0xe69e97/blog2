@@ -250,94 +250,22 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@code-hike/classer@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/classer/-/classer-0.3.0.tgz#030e16dbf06ec91c6c18d8dce08d3d010b5b4424"
-  integrity sha512-kT6cRR1H7KCSXiPEAI1I5qUUBhQVIQwViSlhTkzQdkzOc0f/4TxRBWYfEby2ICItqELXPHFf/tSlU9uSUKf3pg==
-
-"@code-hike/highlighter@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/highlighter/-/highlighter-0.3.0.tgz#bd14b3602e140a1ca9205f5e0fe9abd09ead7e11"
-  integrity sha512-PJD1f+7wVtQYYVVTpO6yNzVTaCOnlVB79ZMpVXnFtlA9zPXiv68TUK3CX0RNHzATLChayCmfrs3PxxrDq4Jnjw==
+"@code-hike/mdx@^0.4.0-next.0":
+  version "0.4.0-next.0"
+  resolved "https://registry.npmjs.org/@code-hike/mdx/-/mdx-0.4.0-next.0.tgz#b5aecc569b7e39e1577bb130df182a1146dd5681"
+  integrity sha512-oBQbpIKgZoELlgUHVj8ED99CrWHCn3KO7fyqQgp5jS+ohTxN8DsaVUZYRyNymVX3k5IrfefDVBfYGoD6l2kB6w==
   dependencies:
-    "@code-hike/utils" "^0.3.0"
-    shiki "^0.10.1"
-
-"@code-hike/mdx@^0.3.0-next.27":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/mdx/-/mdx-0.3.0.tgz#3422e7f345f7a8d17979df1a0a6dea2fb167d724"
-  integrity sha512-6w6LD1Gx8vrNujSkzJWGFKxwt/gkB3vtgtI+YQ0Mi40Xknr5jfGLUnNY0Gh1eq6R5Iibj6cqdIH9qtXa8v+i8g==
-  dependencies:
-    "@code-hike/highlighter" "^0.3.0"
-    "@code-hike/mini-browser" "^0.3.0"
-    "@code-hike/mini-editor" "^0.3.0"
-    "@code-hike/scroller" "^0.3.0"
-    "@code-hike/smooth-code" "^0.3.0"
-    "@code-hike/utils" "^0.3.0"
     "@codesandbox/sandpack-client" "^0.1.20"
+    diff "^4.0.2"
     hast-util-to-estree "^1.4.0"
     is-plain-obj "^3.0.0"
     node-fetch "^2.0.0"
     remark-rehype "^8.1.0"
+    shiki "^0.10.1"
     unified "^9.2.2"
     unist-util-visit "^2.0.0"
     unist-util-visit-parents "^3.0.0"
-
-"@code-hike/mini-browser@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/mini-browser/-/mini-browser-0.3.0.tgz#0c978a91c2e626ebaa42f5274c0c8a29a6142da4"
-  integrity sha512-E3pcEHUndIf+kYfqvrWepy79HjDrt2Ig2BORuDm+nkn7SmmIowVnHQH9UfJhljfCFrOU99DvAnAXhPqYKc5X4A==
-  dependencies:
-    "@code-hike/classer" "^0.3.0"
-    "@code-hike/mini-frame" "^0.3.0"
-    "@code-hike/utils" "^0.3.0"
     use-spring "^0.2.3"
-
-"@code-hike/mini-editor@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/mini-editor/-/mini-editor-0.3.0.tgz#beba90b778c811b9b155c48b4de060d86fa2c734"
-  integrity sha512-CpLvMFnbIrPZnGbLssfCKhvepuQiZF1Mp0ZPHv38C+BK5ZCMVwz1dKsMJu5QwABWC5Wo5BRXK/KfUqOX13i70g==
-  dependencies:
-    "@code-hike/classer" "^0.3.0"
-    "@code-hike/mini-frame" "^0.3.0"
-    "@code-hike/mini-terminal" "^0.3.0"
-    "@code-hike/smooth-code" "^0.3.0"
-    use-spring "^0.2.3"
-
-"@code-hike/mini-frame@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/mini-frame/-/mini-frame-0.3.0.tgz#8f27e06d57455de74f8ba2bc4ff0b92b37b6ad06"
-  integrity sha512-PW7XvkkiIte+WyV8uzql0mBdJ9I74bBQW1WT7CEKoP5Olr0LuNnydxVCYgnZaAWxW4WJ2xy3YkGnIpUk7/yJTw==
-  dependencies:
-    "@code-hike/classer" "^0.3.0"
-    "@code-hike/utils" "^0.3.0"
-
-"@code-hike/mini-terminal@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/mini-terminal/-/mini-terminal-0.3.0.tgz#8497c3a02e14b9011d20ee52611d5301be84eaee"
-  integrity sha512-/914qpYgOmQWFxELLPvFtN6iZ8clwOXQZjSTH+mPfGHPkSz08sACuo7V+WVQ0SbfV5zxMHobv312X4yeYM1mrQ==
-  dependencies:
-    "@code-hike/mini-frame" "^0.3.0"
-
-"@code-hike/scroller@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/scroller/-/scroller-0.3.0.tgz#64b82186b27f3417883bda86688a50e9a6cea747"
-  integrity sha512-Fx7QRYWuZpQbS1FP7O6uNu6+1oBsEt+GGzV1GYV3gPvD5m9rAwQDm8JeBikqed+XGbc2+t30URKwYLPxMCaf6Q==
-
-"@code-hike/smooth-code@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/smooth-code/-/smooth-code-0.3.0.tgz#04a61cf6b6ca3daa20ba32996208269c76731301"
-  integrity sha512-AiPRmZdV+gRvxMZa7SNrvspIfqg1nAYWitwuRqHi1gfp2+Gxq5oCHbvLghVdfwG6fkIBkLBiKhmWmC3ARmDJ6Q==
-  dependencies:
-    "@code-hike/highlighter" "^0.3.0"
-    "@code-hike/utils" "^0.3.0"
-    diff "^4.0.2"
-    use-spring "^0.2.3"
-
-"@code-hike/utils@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@code-hike/utils/-/utils-0.3.0.tgz#c5c41d212c07b12c4bf9add67203fc12d24783c8"
-  integrity sha512-ja5d6YJo7L6IVl3FWROMSNSxrJfi9dxUv/wSfIGjjJgiyQ070bVOp4dKxTWicQuAHEHOKKtQkjyR3RBndlUf/g==
 
 "@codesandbox/sandpack-client@^0.1.20":
   version "0.1.20"
@@ -465,6 +393,14 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@mdx-js/loader@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/@mdx-js/loader/-/loader-2.1.0.tgz#cbcc234c9607fa2d1dd46ffb0234560e6662f080"
+  integrity sha512-r2CqhmBELQUoUxiWDh8SnlD7QTRNULgXE26gmmlD/uE0HWM7CG8iw6F3ZfvVr5p9y2z4MHWsOHbaJEuNCa8i3Q==
+  dependencies:
+    "@mdx-js/mdx" "^2.0.0"
+    source-map "^0.7.0"
+
 "@mdx-js/mdx@^2.0.0":
   version "2.1.0"
   resolved "https://registry.npmjs.org/@mdx-js/mdx/-/mdx-2.1.0.tgz#a984cee27a378619a82d193288031a7b83a54b26"
@@ -505,6 +441,11 @@
     "@rollup/pluginutils" "^4.0.0"
     source-map "^0.7.0"
     vfile "^5.0.0"
+
+"@next/mdx@^12.1.2":
+  version "12.1.2"
+  resolved "https://registry.npmjs.org/@next/mdx/-/mdx-12.1.2.tgz#ebbf069aebe2c5d8445870d65b9c34e916375140"
+  integrity sha512-2eFyAanX1fae8gS3eoSG9PJAvd2PydhIPEUE6VJQsh4bAjBkmIhFhTk2RzpcR7zBo42b8XkB2SR+L0lLvipTnQ==
 
 "@rollup/pluginutils@^4.0.0", "@rollup/pluginutils@^4.1.2":
   version "4.2.0"

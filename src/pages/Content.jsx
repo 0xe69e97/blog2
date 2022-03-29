@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Link } from 'react-router-dom'
 import data from "./data"
+import Header from "@src/components/Header";
 import ContentWithAside from "./ContentWithAside"
 
 function Content() {
